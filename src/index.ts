@@ -91,7 +91,7 @@ type Data = {
     activities: Activity[];
 };
 
-export async function connectWebSocket(userId: string | string[], onUpdate: (data: Data) => void, onError: (err: Error) => void): Promise<WebSocket> {
+export function connectWebSocket(userId: string | string[], onUpdate: (data: Data) => void, onError: (err: Error) => void): WebSocket {
     const ws = new WebSocket(CONSTANTS.WEBSOCKET_URL);
     const subscription: WebSocketSubscription = typeof userId === "string" ? { subscribe_to_id: userId } : { subscribe_to_ids: userId };
     let heartbeat: NodeJS.Timer | null = null;
