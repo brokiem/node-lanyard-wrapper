@@ -1,6 +1,15 @@
 # node-lanyard-wrapper
 Fully-typed Lanyard API wrapper for Node.js
 
+[![npm](https://img.shields.io/npm/v/node-lanyard-wrapper)](https://www.npmjs.com/package/node-lanyard-wrapper)
+[![npm](https://img.shields.io/npm/dt/node-lanyard-wrapper)](https://www.npmjs.com/package/node-lanyard-wrapper)
+
+## Features
+- Fully-typed
+- Supports both WebSocket and REST API
+- Supports fetching data for multiple users at once
+- Supports fetching data for a single user
+
 ## Installation
 ### NPM
 ```bash
